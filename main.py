@@ -4,7 +4,12 @@ import math
 import pandas as pd
 from pnsea import NSE
 
-app = FastAPI(title="NSE Options Analytics API")
+app = FastAPI(
+    title="NSE Options Analytics API",
+    servers=[
+        {"url": "https://options-x4dj.onrender.com"}
+    ]
+)
 
 nse = NSE()
 
