@@ -7,7 +7,7 @@ from pnsea import NSE
 app = FastAPI(
     title="NSE Options Analytics API",
     servers=[
-        {"url": "https://options-x4dj.onrender.com"}
+        {"url": "https://options-iota.vercel.app/"}
     ]
 )
 
